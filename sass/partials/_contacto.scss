@@ -35,6 +35,10 @@
 	font-weight: 800;
 }
 
+.button-enviar:hover {
+	background-color: v.$color2;
+}
+
 @include m.mobile {
 	.contact-info {
 		max-width: 100%;
