@@ -22,7 +22,7 @@
 	height: 60px;
 }
 
-.tittle {
+%titulo-base {
 	padding: 40px;
 	font-weight: 800;
 	font-style: normal;
@@ -30,8 +30,12 @@
 	color: v.$color2;
 }
 
+.tittle {
+	@extend %titulo-base;
+}
+
 .tittle-secondary {
-	@extend .tittle;
+	@extend %titulo-base;
 	padding: 30px;
 	color: v.$color3;
 	text-align: center;
