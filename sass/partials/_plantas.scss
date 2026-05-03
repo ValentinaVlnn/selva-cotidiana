@@ -21,6 +21,10 @@
 	}
 }
 
+.planta-card:hover {
+	animation: scaleUp 0.3s forwards;
+}
+
 .card-img {
 	width: 100%;
 	height: auto;
