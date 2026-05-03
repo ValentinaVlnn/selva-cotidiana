@@ -1,0 +1,12 @@
+// SCSS A PARTIR DE AHORA SASS
+// sass --watch sass/main.scss styles/style.css
+// ejecutar cada vez que abro VSC
+ 
+@use "utilities/variables";
+@use "components/header";
+@use "components/footer";
+@use "partials/home";
+@use "partials/plantas";
+@use "partials/nosotros";
+@use "partials/galeria";
+@use "partials/contacto";

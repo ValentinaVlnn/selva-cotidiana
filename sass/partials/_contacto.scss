@@ -1,0 +1,43 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 400px;
+	margin: 30px auto;
+}
+
+.tittle-data {
+	color: v.$color2;
+	font-weight: 800;
+}
+
+.tittle-form {
+	padding: 10px;
+	border: 2px solid v.$color2;
+	@include m.border-radius(5px);
+}
+
+.tittle-form:focus {
+	outline: none;
+	border-color: v.$color3;
+	background-color: v.$color5;
+}
+
+.button-enviar {
+	padding: 10px;
+	background-color: v.$color3;
+	color: v.$color5;
+	border: none;
+	@include m.border-radius(5px);
+	font-weight: 800;
+}
+
+@include m.mobile {
+	.contact-info {
+		max-width: 100%;
+		padding: 10px;
+	}
+}

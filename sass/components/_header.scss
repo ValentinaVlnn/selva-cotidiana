@@ -1,0 +1,38 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+.navbar-cute {
+	background-color: v.$color5;
+
+	.navbar-brand,
+	.nav-link {
+		color: v.$color2;
+		font-weight: 600;
+	}
+
+	.nav-link:hover,
+	.navbar-brand:hover {
+		background-color: v.$color4;
+		@include m.border-radius(20px);
+	}
+}
+
+.logo {
+	width: 60px;
+	height: 60px;
+}
+
+.tittle {
+	padding: 40px;
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+	color: v.$color2;
+}
+
+.tittle-secondary {
+	@extend .tittle;
+	padding: 30px;
+	color: v.$color3;
+	text-align: center;
+}

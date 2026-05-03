@@ -1,0 +1,106 @@
+@use './mixins' as m;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+$color1: #1b3340;
+$color2: #776288;
+$color3: #3f7d78;
+$color4: #a6cab1;
+$color5: #ddddd6;
+
+$fuente-principal: 'Nunito Sans', sans-serif;
+$fuente-secundaria: Nunito, Helvetica, Arial, sans-serif;
+$fuente-parrafos: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente-principal;
+}
+
+body {
+    font-family: $fuente-secundaria;
+    padding-top: 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px 32px;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+p {
+    font-family: $fuente-parrafos;
+    font-weight: 20;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+iframe {
+    width: 40%;
+    height: 40%;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.color1 {
+    color: $color1;
+}
+
+.color2 {
+    color: $color2;
+}
+
+.color3 {
+    color: $color3;
+}
+
+.color4 {
+    color: $color4;
+}
+
+.color5 {
+    color: $color5;
+}
+
+/* Movil */
+@include m.mobile {
+    main {
+        padding: 0 12px 24px;
+    }
+}
+
+/* Tablet */
+@include m.tablet {
+    main {
+        padding: 0 20px 28px;
+    }
+}
+
+/* Desktop */
+@include m.desktop {
+    main {
+        max-width: 1100px;
+        padding: 0 32px 40px;
+    }
+}
+

@@ -1,0 +1,42 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+.footer-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	align-content: flex-start;
+	padding: 10px;
+	background-color: v.$color5;
+
+	h2 {
+		font-size: 14px;
+		font-style: normal;
+		font-display: swap;
+		color: v.$color2;
+	}
+
+	img {
+		height: 30px;
+		width: 30px;
+	}
+}
+
+.social-media {
+	display: flex;
+	gap: 10px;
+}
+
+@include m.mobile {
+	.footer-container {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+}
+
+@include m.tablet {
+	.footer-container {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
+	}
+}

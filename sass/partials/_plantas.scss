@@ -1,0 +1,33 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 20px;
+	justify-content: center;
+	padding: 20px;
+}
+
+.planta-card {
+	width: 100%;
+	max-width: 18rem;
+	margin: 0 auto;
+
+	.card-title,
+	.card-text,
+	.list-group-item {
+		color: v.$color2;
+	}
+}
+
+.card-img {
+	width: 100%;
+	height: auto;
+}
+
+@include m.tablet-media {
+	.cards-container {
+		grid-template-columns: repeat(2, minmax(260px, 1fr));
+	}
+}
