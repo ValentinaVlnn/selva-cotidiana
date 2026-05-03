@@ -10,7 +10,7 @@ $color5: #ddddd6;
 
 $fuente-principal: 'Nunito Sans', sans-serif;
 $fuente-secundaria: Nunito, Helvetica, Arial, sans-serif;
-$fuente-parrafos: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fuente-parrafos: 'Nunito Sans', sans-serif;
 
 * {
     margin: 0;
@@ -48,7 +48,7 @@ img {
 
 p {
     font-family: $fuente-parrafos;
-    font-weight: 20;
+    font-weight: 600;
     text-align: justify;
     font-size: 1rem;
 }
